@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentara</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="nav-bar-container">
+      <div class="logo-container">
+        <img src="images/Green Minimalist Nature Beauty Care Logo (3).png" />
+      </div>
+      <div class="nav-bar">
+        <ul class="nav-links" style="list-style: none">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="therapist.html">Therapists</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-button">
+          <a href="login.php" class="btn login">Login</a>
+        </div>
+      </div>
+      <div class="nav-menu-toggle" id="toggle" onclick=" show()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!--side nav bar-->
+    <div class="side-nav-bar-container" id="side-nav-bar-container">
+      <p
+        style="text-align: right; font-size: 20px"
+        id="cross"
+        onclick="closeNav()"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+      <div class="side-nav-bar">
+        <ul class="side-nav-links" style="list-style: none">
+          <li class="side-nav-bar-link"><a href="home.html">Home</a></li>
+          <li class="side-nav-bar-link"><a href="about.html">About</a></li>
+          <li class="side-nav-bar-link">
+            <a href="features.html">Features</a>
+          </li>
+          <li class="side-nav-bar-link">
+            <a href="therapist.html">Therapists</a>
+          </li>
+          <li class="side-nav-bar-link"><a href="blog.html">Blog</a></li>
+          <li class="side-nav-bar-link"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <section id="home" class="hero">
+      <div class="hero-image">
+        <div class="hero-content">
+          <h1>Mentara</h1>
+          <h3>Your Mental Wellness Journey Starts Here</h3>
+          <p>
+            Connect with licensed therapists, track your emotions, and
+            discover<br />
+            tools for a healthier mind — all in one secure platform.
+          </p>
+          <a href="register.php" class="hero-btn">Start Your Journey</a>
+        </div>
+      </div>
+    </section>
+    <!--Why we exist-->
+    <div class="exist-container">
+      <div class="exist-container1">
+        <div class="heading">
+          <h1>Built With Empathy,<br />Backed by Technology</h1>
+          <p>
+            Mentara is more than a therapy platform. It's a digital companion
+            for self-discovery, emotional growth, and expert support—tailored to
+            your needs.
+          </p>
+        </div>
+        <div class="highlights">
+          <div class="item">
+            <i class="fa-regular fa-face-smile"></i><br />Mood Tracking
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-book"></i><br />Smart Journaling
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-phone"></i><br />1-on-1 Therapy
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-book-open-reader"></i><br />Resources
+          </div>
+        </div>
+      </div>
+      <div class="exist-container2"></div>
+    </div>
+    <!--Therapist highlights-->
+    <div class="therapists">
+      <h1>Therapies Available at Mentara</h1>
+      <div class="home-container-body">
+        <div class="home-container" id="services-0">
+          <div class="home-card">
+            <img src="images/hero-image.jpeg" alt="therapy 1" />
+            <div class="home-card-content">
+              <h3>Mindfulness-Based Therapy</h3>
+              <p>Breathe. Be present. Heal from within.</p>
+            </div>
+          </div>
+          <div class="home-card">
+            <img src="images/talktherapy.jpeg" alt="therapy 2" />
+            <div class="home-card-content">
+              <h3>Talk Therapy</h3>
+              <p>Sometimes, you just need to be heard.</p>
+            </div>
+          </div>
+          <div class="home-card">
+            <img
+              src="images/Therapy for Teens & Young Adults.jpg"
+              alt="therapy 3"
+            />
+            <div class="home-card-content">
+              <h3>Therapy for Teens & Young Adults</h3>
+              <p>Guidance through life’s transitions.</p>
+            </div>
+          </div>
+          <div class="home-card">
+            <img src="images/Family & Couples Therapy.jpg" alt="therapy 4" />
+            <div class="home-card-content">
+              <h3>Family & Couples Therapy</h3>
+              <p>Healing together, growing stronger.</p>
+            </div>
+          </div>
+        </div>
+        <form action="features.html">
+          <button class="home-services-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!--reviews-->
+    <section class="testimonial-section">
+      <div class="testimonial-container">
+        <!-- Left Content -->
+        <div class="testimonial-left">
+          <h2>
+            <span style="color: #405e62"> What Our<br />Customers Says</span>
+          </h2>
+          <p>
+            Our platform has touched the lives of many students, professionals,
+            parents each finding comfort, clarity, and courage through guided
+            support.
+          </p>
+          <button class="view-btn">View More</button>
+        </div>
+
+        <!-- Right Content -->
+        <div class="testimonial-right">
+          <div class="testimonial-card">
+            <img
+              src="https://randomuser.me/api/portraits/women/45.jpg"
+              alt="Mehwish"
+            />
+            <div class="testimonial-text">
+              <h4>Amira – University Student</h4>
+              <p>
+                "I was drowning in academic pressure and loneliness. Mentara
+                gave me a space to express myself and track my moods. I finally
+                feel understood."
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial-card highlighted">
+            <div class="highlight-bar"></div>
+            <img
+              src="https://randomuser.me/api/portraits/women/65.jpg"
+              alt="Elizabeth Jeff"
+            />
+            <div class="testimonial-text">
+              <h4>Ramesha – Software Engineer</h4>
+              <p>
+                "I had never spoken about my anxiety before. My therapist guided
+                me with patience and powerful tools. Now I sleep better, work
+                better, live better."
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img
+              src="https://randomuser.me/api/portraits/women/85.jpg"
+              alt="Emily Thomas"
+            />
+            <div class="testimonial-text">
+              <h4>Thilini – New Mom</h4>
+              <p>
+                "Postpartum emotions took me by surprise. The smart journaling
+                tool became my outlet. Now, I use it every day."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Query part-->
+    <div class="query-container">
+      <h1>Have a Question? Let’s Talk</h1>
+      <p>
+        Whether you're unsure how to begin, curious about our therapists, or
+        need technical help our team is here to assist you
+      </p>
+      <div class="query-section">
+        <form action="public_submit_inquiry.php" method="POST">
+          <label for="name"> Name </label><br />
+          <input type="text" name="name" id="name" required /><br />
+
+          <label for="email"> Email Address </label><br />
+          <input type="email" name="email" id="email" required /><br />
+
+          <label for="message">Your Message</label><br />
+          <textarea name="message" id="message" rows="4" required></textarea
+          ><br />
+
+          <!-- Hidden fields -->
+          <input type="hidden" name="role" value="general" />
+          <input type="hidden" name="userid" value="0" />
+
+          <button type="submit" id="query-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!--footer-->
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="therapist-login.php">For Therapists</a></li>
+        <li><a href="#FAQs">FAQ</a></li>
+        <li><a href="">Terms&Conditions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <p>© 2025 Mentara. All rights reserved.</p>
+    </footer>
+    <script>
+      var sidenavbar = document.getElementById("side-nav-bar-container");
+      var toogle = document.getElementById("toggle");
+      var close = document.getElementById("cross");
+      function show() {
+        sidenavbar.style.display = "block";
+      }
+      function closeNav() {
+        sidenavbar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

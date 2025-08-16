@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Winky Sans", sans-serif;
+  background-color: beige;
+  list-style: none;
+}
+.therapist-login-container {
+  background-color: beige;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.therapist-login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #405e62;
+}
+
+.therapist-form-group {
+  margin-bottom: 20px;
+}
+
+.therapist-form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #405e62;
+  background-color: transparent;
+}
+
+.therapist-form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.therapist-form-group input:focus {
+  border-color: #405e62;
+  outline: none;
+}
+
+.therapist-login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #405e62;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.therapist-login-container button:hover {
+  background-color: #8ab2c0;
+}
+
+.therapist-extra-links {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.therapist-extra-links a {
+  color: #8ab2c0;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.therapist-extra-links a:hover {
+  text-decoration: underline;
+}
+.therapist-login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+  background-color: beige;
+  gap: 30px;
+}
+
+.therapist-image-section img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+}
+.register-body {
+  background-color: #8ab2c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+.therapist-logo-container img {
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.therapist-logo-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-left: 210px;
+  color: #486569;
+}
+.therapist-register-wrapper {
+  width: 100%;
+  max-width: 600px;
+  background-color: beige;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.therapist-register-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #405e62;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #405e62;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #405e62;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #405e62;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #405e62;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #405e62;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+/* Make form responsive for small screens */
+@media (max-width: 768px) {
+  .therapist-login-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .therapist-image-section img {
+    max-width: 100%;
+  }
+}
